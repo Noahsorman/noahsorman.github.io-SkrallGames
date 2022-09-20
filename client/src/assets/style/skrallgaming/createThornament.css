@@ -1,0 +1,170 @@
+.CreateThornamentBody{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10vh;
+}
+
+.CreateThornamentBody > div{
+    display: flex;
+    width: 60rem;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4em;
+}
+
+.CreateThornamentBody .part{
+    margin: 1rem 0em;
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CreateThornamentBody .part > *{
+    margin-bottom: 0.3em;
+    padding: 0.4em;
+}
+
+.CreateThornamentBody fieldset{
+    padding-right: 2em;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+    box-shadow:  8px 8px 6px #929292,
+                -5px -5px 4px #eeeeee;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.CreateThornamentBody fieldset div,
+.CreateThornamentBody fieldset table {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.CreateThornamentBody fieldset table{
+    border-spacing: 0.5em
+}
+.CreateThornamentBody fieldset table thead tr{
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 8px 8px 8px #929292
+            , -6px -6px 8px #eeeeee;
+}
+.CreateThornamentBody fieldset table tbody tr {
+    margin-top: 1em;
+    border-radius: 25px;
+    box-shadow: inset 4px 4px 8px #929292
+            , inset -4px -4px 8px #eeeeee;    
+}
+.CreateThornamentBody fieldset table tbody tr td:first-child{
+    margin: 0em;
+    padding: 0.2rem 0rem 0.1rem 1rem;
+    margin: 1em
+}
+
+.CreateThornamentBody .registeredTeams{
+    width: 400px;
+}
+
+.CreateThornamentBody .registeredTeams td{
+    position: relative;
+}
+
+.CreateThornamentBody .registeredTeams i{
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    top: 0px;
+    font-style: normal;
+}
+
+.CreateThornamentBody button{
+    background-color: inherit;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 10px 10px 12px #929292
+            , -4px -4px 5px #eeeeee;
+    cursor: pointer;
+}
+.CreateThornamentBody button:hover{
+    transform: scale(1.05);
+    background-color: initial;
+}
+
+.CreateThornamentBody .inputBox{
+    position: relative;
+    width: 250px;
+    display: grid;
+}
+
+.CreateThornamentBody .inputBox input,
+.CreateThornamentBody .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 25%);
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    background-color: inherit;
+    border: none;
+    box-shadow: inset 4px 4px 8px #929292
+            , inset -4px -4px 8px #eeeeee;
+}
+
+.CreateThornamentBody .inputBox datalist{
+    background-color: red;
+    height: 20px;
+}
+
+.CreateThornamentBody .inputBox span{
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: hsl(0, 0%, 25%);
+    transition: 0.5s;
+}
+
+.CreateThornamentBody .inputBox input:valid ~ span,
+.CreateThornamentBody .inputBox input:focus ~ span,
+.CreateThornamentBody .inputBox select:valid ~ span,
+.CreateThornamentBody .inputBox select:focus ~ span{
+    color: hsl(276, 50%, 50%);
+    transform: translateY(-16px);
+    background-color: hsl(0, 0%, 25%);;
+    font-size: 0.8rem;
+    padding: 0em 1em 0em 1em;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.CreateThornamentBody > div.finishButton{
+    position: absolute;
+    background-color: #333;
+    bottom: 3em;
+    padding: 2em;
+    border-radius: 40px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+}
+
+.CreateThornamentBody > div.finishButton:active{
+    animation: startTournament 4s linear infinite;
+}
+
+@keyframes startTournament {
+    10%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.2);
+        background-color: inherit;
+    }
+}

@@ -1,0 +1,64 @@
+nav{
+    background: -webkit-linear-gradient(top, #222222 0%, #666666 100%);
+    box-shadow: 0 1px 4px 1px #333333;
+    border-bottom: 15px;
+    height: 7vh;
+}
+
+nav ul{
+    position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+    width: auto;
+}
+nav ul li label{
+    position: relative;
+    width: auto;
+}
+nav ul li label input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+nav ul li label .icon-box{
+    background: #101010;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+nav ul li label .icon-box .fa{
+    font-size: 20px;
+    color: rgb(112, 112, 112);
+    transition: 0.5s;
+}
+nav ul li label input[type="checkbox"]:hover ~ .icon-box{
+    background: #000;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(149, 33, 243, 0.5),
+                0 0 20px rgba(149, 33, 243, 0.5),
+                0 0 30px rgba(149, 33, 243, 0.5);
+    inset: 0 0 10px rgba(149, 33, 243, 0.5);
+                
+}
+nav ul li label input[type="checkbox"]:hover ~ .icon-box .fa{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(149, 33, 243, 1),
+                 0 0 10px rgba(149, 33, 243, 1);
+}

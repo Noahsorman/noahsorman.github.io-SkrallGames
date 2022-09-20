@@ -1,0 +1,195 @@
+.calculatorBody{
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    text-align: center; 
+    color: white;
+    padding-top: 2vh;
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: linear-gradient(0deg, #3c3c3c 0%, #222222 100%);
+    width: 100%;
+    min-height: 91vh;
+    height: auto;
+}
+
+.teamBody{
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    color: white;
+    text-align: center;
+    padding: 2em 0em;
+    width: 50%;
+    display: inline-block;
+}
+
+.teamBody h1{
+    margin-bottom: 0.5em;
+}
+
+.teamBody table{
+    margin-top: 1em;
+}
+
+.teamBody table, tr{
+    width: 80%;
+}
+
+.teamBody td:first-child{
+    text-align: right;
+}
+.teamBody td:last-child{
+    text-align: left;
+}
+
+.teamSummary{
+    margin-top: 1em;
+
+}
+
+.teamBody td span{
+    margin-left: 1em;
+}
+
+/* ahsduhasuda */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+  
+.calculatorBody select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: white;
+    background-color: #666666;    
+    cursor: pointer;
+    font-size: 26px;
+}
+/* Remove IE arrow */
+.calculatorBody select::-ms-expand {
+    display: none;
+}
+/* Custom Select wrapper */
+.calculatorBody .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+/* Arrow */
+.calculatorBody .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #666666;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+/* Transition */
+.calculatorBody .select:hover::after {
+    color: black;
+}
+
+.calculatorBody .select option{
+    font-size: 20px;
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: linear-gradient(0deg, #3c3c3c 0%, #222222 100%);
+}
+
+.calculatorBody .selectContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.calculatorBody .selectContainer span{
+    position: absolute;
+    font-size: small;
+    padding-bottom: 1em;
+    padding-left: 15em;
+}
+
+.matchResults{
+    text-align: center; 
+    color:white;
+}
+
+.matchResults table, .matchResults tr{
+    width: 20%;    
+}
+
+.matchResults table, .matchResults h1, .matchResults, .bestOf{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.matchResults div{
+    padding: 1em;    
+    border-radius: 15px;
+    background-color: #666666;
+    position: relative;
+}
+
+.matchResults div span{
+    padding: 1em;    
+    border-radius: 15px;
+    width: 100px;
+    background-color: hsl(124, 100%, 15%);
+    box-shadow: 0 0 20px hsla(124, 100%, 25%, 70%),
+                0 0 40px hsla(124, 100%, 25%, 70%),
+                0 0 60px hsla(124, 100%, 25%, 70%);
+    position: absolute;
+    transition: 1s all ease;
+    right: 0;
+    top: 0    
+}
+
+.matchResults div span.checked{
+    transition: 1s all ease;
+    right: auto;
+    top: 0;
+    left: 0px; 
+    background-color: hsl(271, 100%, 15%);
+    box-shadow: 0 0 20px hsla(271, 100%, 25%, 70%),
+                0 0 40px hsla(271, 100%, 25%, 70%),
+                0 0 60px hsla(271, 100%, 25%, 70%);
+}
+
+.matchResults tr.hide{
+    opacity: 30%;
+}
+
+.calculatorBody button{
+    padding: 0.5em 4em;
+    border-radius: 12px;
+    border: none;
+    margin: 0.5em 0em 0em 2em;
+    font-size: 16px;
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 0 #555555;
+
+}
+
+.calculatorBody button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.calculatorBody button:hover{
+    background-color: #666666;
+    cursor: pointer;
+}

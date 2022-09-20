@@ -1,0 +1,188 @@
+
+
+.thornamentBody div.ulkeeper > div{
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    grid-auto-flow: column;
+    grid-auto-columns: 31%;
+    padding-inline-start: 6em;
+    overflow-x: auto;
+    /* overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;*/
+    scroll-padding-inline: 6em;
+}
+
+/* .thornamentBody div.ulkeeper > div > * {
+    scroll-snap-align: start;
+} */
+
+@media screen and (max-width: 500px) {
+    div.ulkeeper > div {
+        display: flex;
+        grid-auto-flow: row;
+        grid-auto-columns:auto;
+        padding-inline-start: auto;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: 6em;
+    }
+}
+
+.thornamentBody .pageSwitcher{
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+}
+.thornamentBody .pageSwitcher > a{
+    position: sticky;
+    background: hsl(0, 0%, 70%);
+    padding: 1.4em 3em;
+    border-radius: 25px;
+    opacity: 60%;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.thornamentBody .ulkeeper > div > div{
+    width: 300px;
+    margin: 1em 10em ;
+    list-style-type: none;
+    text-align: center;
+    padding: 1em 1em;
+    border-radius: 29px;
+    background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+    box-shadow:  8px 8px 16px #929292,
+                -8px -8px 16px #ffffff;
+}
+
+.thornamentBody .ulkeeper > div > div.finished{
+    opacity: 85%;
+    scale: 0.8 
+}
+
+.thornamentBody .ulkeeper .tobe{
+    --color:hsl(271, 100%, 42%);   
+    animation: tobeBorder 2s linear infinite;
+    box-shadow:  6px 6px 12px var(--color),
+                -6px -6px 12px var(--color);
+}
+@keyframes tobeBorder {
+    0%{
+        box-shadow:  6px 6px 12px var(--color),
+                    -6px -6px 12px var(--color);
+    }
+    50%{
+        box-shadow:  2px 2px 4px var(--color),
+                    -2px -2px 4px var(--color);
+    }
+    100%{
+        box-shadow:  6px 6px 12px var(--color),
+                    -6px -6px 12px var(--color);
+    }
+}
+
+.thornamentBody .ulkeeper .current{     
+    animation: currentBorder 4s linear infinite
+            , rumble 0.5s linear infinite;
+    box-shadow:  8px 8px 16px orange,
+                -8px -8px 16px orange;
+}
+@keyframes currentBorder {
+    0%{
+        box-shadow:  14px 14px 28px orange,
+                    -14px -14px 28px orange,
+                    8px 8px 12px red,
+                    -8px -8px 12px red
+    }
+    25%{
+    }
+    50%{
+        border-color: yellow;        
+    }
+    75%{
+        box-shadow:  8px 8px 16px orange,
+                    -8px -8px 16px orange;
+    }
+    100%{
+        box-shadow:  11px 11px 22px orange,
+                    -11px -11px 22px orange,
+                    6px 6px 10px red,
+                    -6px -6px 10px red;
+    }
+}
+@keyframes rumble {
+    0%{transform: skewY(0deg);}
+    25%{transform: skewY(1deg);}
+    50%{transform: skewY(0deg);}
+    75%{transform: skewY(-1deg);}
+    100%{transform: skewY(0deg);}
+}
+
+
+.thornamentBody .teambody{
+    border-radius: 10px;
+    margin: 1.2em 0.5em;
+    padding: 0.5em 0em;
+    border-radius: 19px;
+    /* background: #d6d6d6;
+    box-shadow: inset 8px 8px 17px #929292,
+                inset -8px -8px 17px #ffffff; */
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px black;
+    cursor: pointer;
+}
+
+.thornamentBody .teambody .teamname{
+    font-size: x-large;
+    padding: 1rem 0em ;
+}
+.thornamentBody .teambody .teamplayers{
+    display: flex;
+    justify-content: space-evenly;
+    height: 1em;
+    font-size: large;
+}
+
+.thornamentBody .teambody .teamplayers p{
+    margin: 0;
+}
+
+.thornamentBody div.ulkeeper .scorebody{
+    margin: 0.7em 0em;
+    height: 50px;
+    font-size: 28px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.thornamentBody div.ulkeeper .score{
+    padding: 0.7em 0.7em;
+    border-radius: 15px;
+    background: #d6d6d6;
+    box-shadow: inset 8px 8px 17px #929292,
+                inset -8px -8px 17px #ffffff;
+    cursor: pointer;
+}
+
+.thornamentBody .matchcount{
+    border-radius: 29px;
+    background: #d6d6d6;
+    box-shadow: inset 7px 7px 14px #565656,
+                inset -7px -7px 14px #ffffff;
+    padding: 0.2em 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}

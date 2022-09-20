@@ -1,0 +1,158 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.role-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.role-overlay.Facist{
+    background-color: hsla(0, 100%, 50%, 20%);
+}
+
+.role-overlay.Liberal{
+    background-color: hsla(200, 100%, 50%, 20%);
+}
+
+.role {
+/* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 20rem;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+  
+/* On mouse-over, add a deeper shadow */
+.role:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+  
+  /* Add some padding inside the card container */
+.role div {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: wheat;
+    height: 100%;
+}
+
+.role div p:not(.win-condition), .role div h4{
+    font-size: xx-large;
+    margin: 0px 0px;
+    padding-bottom: 1rem;
+}
+
+.role p.win-condition{
+    margin: 0px 0px;
+    text-align: left;
+    padding: 0rem 1.2rem 1rem 1.2rem;
+}
+
+.role div p.Facist{
+    color: red;
+}
+.role div p.Liberal{
+    color: blue;
+}
+
+.role img{
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+.vote{
+    background-color: #555;
+    color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    padding: 1rem 0rem;
+    border-top-left-radius: 1em;
+}
+
+.show-role{
+    position: absolute;
+    bottom: 0;
+    background-color: #555;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0rem;
+    border-top-left-radius: 1em;
+    /* border-top-right-radius: 1em; */
+}
+
+.show-role:hover{
+    cursor: pointer;
+}
+
+.liberal-table, .facist-table{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-collapse: collapse;
+    position: flex;
+    flex-wrap: nowrap;
+    margin: 1em 0em 1em 0em;
+}
+.liberal-table tr, .facist-table tr{  
+    border: solid;
+    border-width: 2 2px;
+    border-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    height: 5em;
+}
+.liberal-table td, .facist-table td{
+    text-align: center;
+    height: 4em;    
+    border: solid;
+    border-width: 0 2px;
+    border-color: #333;
+    word-wrap: break-word;
+    flex-wrap: wrap;    
+}
+
+.liberal-table td{
+    background-color: hsla(200, 100%, 50%, 20%);
+    width: 20%;
+}
+
+.facist-table td{
+    width: 12.5%;
+    height: 1em;
+    background-color: hsla(0, 100%, 50%, 20%);
+    font-size: large;
+    text-align: left;
+}
+
+.facist-table td span{
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+.facist-table td.placed-policy{
+    opacity: 50%;
+}
+
+.facist-table td.facist-policy-c {
+    font-size: 42px;
+    text-align: center;
+    background-color: hsla(0, 100%, 50%, 40%);
+}
+.facist-table td img{
+    height: 50px;
+    position: absolute;
+    left: 43%;
+    margin-bottom: 2em;
+    opacity: 100%;
+}

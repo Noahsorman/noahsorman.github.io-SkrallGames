@@ -1,0 +1,117 @@
+.playerlist{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.playerlist table{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+    border-radius: 15px 15px 15px 15px;
+}
+.playerlist th{
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+.playerlist tr:last-child(1){
+    border-radius: 15px;
+}
+.playerlist table, 
+.playerlist th, 
+.playerlist tr{
+    padding: 20px;
+    color: white;
+    border: 1px solid #080808;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(top, #3c3c3c 100%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    cursor: pointer;
+}
+.playerlist td{
+    padding: 20px;
+    color: white;
+    border: 1px solid #080808;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.playerlist .content-table tbody tr:hover{
+    background: linear-gradient(top, #3c3c3c 100%, #008008 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 45%, #008008 100%);
+}
+
+.playerlist h1{
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+.playerlist p{
+    margin-top: 0em;
+}
+
+.playerlist td{
+    position: relative;
+}
+
+.playerlist .placementGames{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 90%;
+    font-weight: bold;
+    color: yellow;
+}
+
+.playerlist .playerInfo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+.playerlist .playerInfo div{
+    background: linear-gradient(top, #3c3c3c 100%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    color: white;
+    width: 700px;
+    padding: 1em;
+    position: fixed;
+    border: 2px solid #008008;
+    border-collapse: collapse;
+    border-radius: 20px;
+    /* box-shadow: 0 8px 16px 8px #420080; */
+}
+
+.playerlist .playerInfo p{
+    white-space: pre-wrap;
+}
+
+@media (max-width: 835px){
+    .playerlist table{
+        table-layout: fixed;
+        width: 100%;
+    }
+    .playerlist tr{
+        width: 100%;
+    }
+    .playerlist th, td{
+        font-size: small;
+        text-align: left;
+        padding-left: 0.5em;
+        text-overflow: ellipsis;
+    }
+
+    .playerlist .playerInfo div{
+        width: 85%;
+    }
+
+}

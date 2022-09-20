@@ -1,0 +1,15 @@
+{
+    "include": [
+        "src/*"
+        , "index.d.ts"
+    ],
+    "compilerOptions": {
+        "target": "ES3",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "useUnknownInCatchVariables": false,
+        "allowJs": true,
+        "allowUnreachableCode": false
+    }
+}

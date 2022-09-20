@@ -1,0 +1,203 @@
+.bracketBody {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: auto;
+    width: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.bracketBody .pageSwitcher{
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+}
+.bracketBody .pageSwitcher > a{
+    position: sticky;
+    background: hsl(0, 0%, 70%);
+    padding: 1.4em 3em;
+    border-radius: 25px;
+    opacity: 60%;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.bracketBody .group > div{
+    margin: 2em 2em;
+}
+
+.bracketBody > div{
+    flex: 0 0 auto;
+}
+
+.bracketBody .group div table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(0, 0%, 30%)
+            , -5px -5px 8px hsl(0, 0%, 100%);    
+    border-radius: 25px;
+}
+
+.bracketBody .group thead{
+    background: none;
+}
+
+.bracketBody .group thead tr{
+    box-shadow: 0 5px 15px black;
+}
+
+.bracketBody .group th,
+.bracketBody .group td{
+    padding: 0.5em 1em;
+    width: 6rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    max-width: 12rem;
+}
+
+.bracketBody .group td{
+    box-shadow: inset -4px 0 4px -2px #333;
+    -webkit-box-shadow: inset -4px 1px 4px -2px #333;
+	position: relative;
+}
+
+.bracketBody .group .empty{
+    background-color: #333;
+    box-shadow: inset 4px 4px 10px black;
+    color: white;
+}
+
+.bracketBody .group td:not(:first-child){
+    text-align: center;    
+} 
+
+.bracketBody .group thead tr:first-child{
+    border-bottom-left-radius: 25px;
+}
+
+.bracketBody .group th:first-child{
+    font-size: 120%;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333;
+    border-radius: 25px;    
+    box-shadow: 2px 2px 5px black
+            , -2px -2px 5px white;
+}
+
+.bracketBody .group table tr:last-child td:first-child {
+    border-bottom-left-radius: 25px;
+}
+
+.bracketBody .group table tr:last-child td:last-child {
+    border-bottom-right-radius: 25px;
+}
+
+.bracketBody .group table tr:first-child th:first-child,
+.bracketBody .group table tr:first-child{
+    border-top-left-radius: 25px;    
+}
+
+.bracketBody .group table tr:first-child th:last-child,
+.bracketBody .group table tr:first-child{
+    border-top-right-radius: 25px;
+}
+
+
+/*==============================================================*/
+/*PLAY OFF*/
+/*==============================================================*/
+
+.bracketBody .playoff{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+}
+
+.bracketBody .playoff .round{
+    padding: 0em 4em;
+    width: 16rem;
+    display: grid;
+    align-items: baseline;
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    border-left: 0.1rem solid hsl(0, 0%, 70%);
+    cursor: default;
+}
+
+.bracketBody .playoff .match{
+    padding: 0;
+    position: relative;
+    /* box-shadow: 4px 4px 15px black; */
+    border-radius: 10px;
+    color: black;
+    box-shadow:  2px 2px 8px black
+            , -4px -4px 6px white;
+    text-align: left;
+    cursor: default;
+}
+
+.bracketBody .playoff .match div{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.bracketBody .playoff .match div > div{
+    display: inline-block;
+    position: relative;
+}
+
+/*first team div*/
+.bracketBody .playoff .match > div:first-child{
+    border-bottom: 0.1em solid hsl(0, 0% , 70%);
+    border-top-left-radius: 10px;    
+    border-top-right-radius: 10px;
+}
+/*second team div*/
+.bracketBody .playoff .match > div:last-child{    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.bracketBody .playoff .match .team{
+    width: 12.5rem;
+    height: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.2rem;
+    cursor: default;
+}
+.bracketBody .playoff .match .team.placeholder{    
+    font-size: 0.95rem;
+    color: hsl(0, 0%, 50%)
+}
+.bracketBody .playoff .match .score{    
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    padding: 0.6rem;
+    border-left: 0.2em solid hsl(0, 0% , 70%);
+    cursor: default;
+    /* box-shadow: 2px 2px 5px black
+            , -2px -2px 1px white; */
+}
+
+.bracketBody .playoff .matchnumber{
+    position: absolute;
+    top: 1.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 50%);
+    background-color: lightgray;
+}

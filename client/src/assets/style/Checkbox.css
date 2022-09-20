@@ -1,0 +1,52 @@
+label{
+    position: relative;
+}
+label input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+label .icon-box{
+    width: 40px;
+    height: 40px;
+    background: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+label .icon-box .fa{
+    font-size: 20px;
+    color: rgb(112, 112, 112);
+    transition: 0.5s;
+}
+label input[type="checkbox"]:hover ~ .icon-box{
+    background: #000;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(149, 33, 243, 0.5),
+                0 0 20px rgba(149, 33, 243, 0.5),
+                0 0 30px rgba(149, 33, 243, 0.5);
+                inset: 0 0 10px rgba(149, 33, 243, 0.5);
+                
+}
+label input[type="checkbox"]:hover ~ .icon-box .fa{
+    color: #fff;
+    text-shadow: 0 0 10px rgba(149, 33, 243, 1),
+                 0 0 10px rgba(149, 33, 243, 1);
+}
+
+div.checkbox.checked i::before {
+    content: "✓";
+    color: #00ff11;
+    text-align: center;
+    font-size: 40px;
+}
+
+div.checkbox:not(checked) i::before {
+    content: "X";
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
