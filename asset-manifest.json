@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SkrallGames/static/css/main.237a90ab.css",
+    "main.js": "/SkrallGames/static/js/main.ed94c706.js",
+    "index.html": "/SkrallGames/index.html",
+    "main.237a90ab.css.map": "/SkrallGames/static/css/main.237a90ab.css.map",
+    "main.ed94c706.js.map": "/SkrallGames/static/js/main.ed94c706.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.237a90ab.css",
+    "static/js/main.ed94c706.js"
+  ]
+}
