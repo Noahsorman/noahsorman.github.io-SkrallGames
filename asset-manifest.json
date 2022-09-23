@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SkrallGames/static/css/main.237a90ab.css",
-    "main.js": "/SkrallGames/static/js/main.ed94c706.js",
+    "main.css": "/SkrallGames/static/css/main.52bd9f66.css",
+    "main.js": "/SkrallGames/static/js/main.01ce1252.js",
     "index.html": "/SkrallGames/index.html",
-    "main.237a90ab.css.map": "/SkrallGames/static/css/main.237a90ab.css.map",
-    "main.ed94c706.js.map": "/SkrallGames/static/js/main.ed94c706.js.map"
+    "main.52bd9f66.css.map": "/SkrallGames/static/css/main.52bd9f66.css.map",
+    "main.01ce1252.js.map": "/SkrallGames/static/js/main.01ce1252.js.map"
   },
   "entrypoints": [
-    "static/css/main.237a90ab.css",
-    "static/js/main.ed94c706.js"
+    "static/css/main.52bd9f66.css",
+    "static/js/main.01ce1252.js"
   ]
 }
